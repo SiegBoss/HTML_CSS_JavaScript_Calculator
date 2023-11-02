@@ -1,0 +1,51 @@
+/*Paleta de Color | Color Palette*/
+/*
+cad2c5
+84a98c
+52796f
+354f52
+2f3e46
+*/
+
+body{
+    /*Imagen de fondo | Background image*/
+    background-image: url("Wallpapers.jpg");
+    /*Tamaño de la imagen | Image size*/
+    background-size: cover;
+    /*Tipografia | Font*/;
+    font-family: 'Geologica', sans-serif;
+    
+}
+
+.calculator-div{
+    width: 370px;
+    height: 400px;
+    background-color: rgba(53, 79, 82,0.7);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.contacto-div__button{
+    width: 55px;
+    height: 55px;
+    background-color: #84a98c;
+    border-radius: 10px;
+    color: #2f3e46;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 2px;
+    border: none;
+}
+
+.contacto-div__button:active {
+    background-color: #52796f; /* Cambia este valor al color que desees cuando el botón es presionado */
+}
+
+#contacto-div__input{
+    width: 307px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #cad2c5;
+    background-color: #52796f
+}
