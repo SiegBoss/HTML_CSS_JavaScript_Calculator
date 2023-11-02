@@ -1,0 +1,51 @@
+<!-- Calculcadora | Calculator -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <!--Enlazar html con CSS | Link html with CSS-->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+
+    <h1>Calculator</h1>
+    <div id="calculator-div">
+        <!--Operacion | Operation-->
+        <input type="text" id="contacto-div__input" placeholder="0" disabled>
+        <br>
+        <!--Botones | Buttons-->
+        <button type="contacto-div__button" onclick="agregar('Pi')">π</button>
+        <button type="contacto-div__button" onclick="agregar('e')">e</button>
+        <button type="contacto-div__button" onclick="agregar('(')">(</button>
+        <button type="contacto-div__button" onclick="agregar(')')">)</button>
+        <button type="contacto-div__button" onclick="agregar('AC')">AC</button>
+        <br>
+        <button type="contacto-div__button" onclick="agregar('**')">^</button>
+        <button type="contacto-div__button" onclick="agregar('7')">7</button>
+        <button type="contacto-div__button" onclick="agregar('8')">8</button>
+        <button type="contacto-div__button" onclick="agregar('9')">9</button>
+        <button type="contacto-div__button" onclick="agregar('/')">/</button>
+        <br>
+        <button type="contacto-div__button" onclick="agregar('**0.5')">√</button>
+        <button type="contacto-div__button" onclick="agregar('4')">4</button>
+        <button type="contacto-div__button" onclick="agregar('5')">5</button>
+        <button type="contacto-div__button" onclick="agregar('6')">6</button>
+        <button type="contacto-div__button" onclick="agregar('*')">x</button>
+        <br>
+        <button type="contacto-div__button" onclick="agregar(',')">,</button>
+        <button type="contacto-div__button" onclick="agregar('1')">1</button>
+        <button type="contacto-div__button" onclick="agregar('2')">2</button>
+        <button type="contacto-div__button" onclick="agregar('3')">3</button>
+        <button type="contacto-div__button" onclick="agregar('-')">-</button>
+        <br>
+        <button type="contacto-div__button" onclick="agregar('%')">%</button>
+        <button type="contacto-div__button" onclick="agregar('.')">.</button>
+        <button type="contacto-div__button" onclick="agregar('0')">0</button>
+        <button type="contacto-div__button" onclick="agregar('=')">=</button>
+        <button type="contacto-div__button" onclick="agregar('+')">+</button>
+    </div>
+    <!--Enlazar html con JS | Link html with JS-->
+    <script src="calculator.js"></script>
+</body>
+</html>
