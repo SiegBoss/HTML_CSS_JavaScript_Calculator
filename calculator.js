@@ -27,22 +27,18 @@ function agregar(valor) {
 
         } catch(e) {
 
-            see_operation = "Error al realizar la operacion";
+            see_operation = "Error";
         }
     }
     //Si detecta P, agrega el valor de pi | If detect P, add the value of pi
     else if(valor == 'P') {
-        let pi = Math.PI.toString();
-        let pi_rounded = pi.substring(0, 4);
-        hidden_operation += pi_rounded;
-        see_operation += pi_rounded;
+        hidden_operation += 3.1416;
+        see_operation += 'π';
     }
     //Si detecta e, agrega el valor de e | If detect e, add the value of e
     else if(valor == 'e') {
-        let e = Math.E.toString();
-        let e_rounded = e.substring(0, 5);
-        hidden_operation += e_rounded;
-        see_operation += e_rounded;
+        hidden_operation += 2.71828;
+        see_operation += 'e';
     }
     //Si detecta * muestra X | If detect *, show X
     else if (valor == '*'){
