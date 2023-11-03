@@ -1,51 +1,113 @@
 <!-- Calculcadora | Calculator -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Calculator</title>
 </head>
+
 <body>
     <!--Enlazar html con CSS | Link html with CSS-->
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="calculator.css">
-    <link href="https://fonts.googleapis.com/css2?family=Geologica&family=Montserrat:wght@600&family=Pixelify+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="calculator.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica&family=Montserrat:wght@600&family=Pixelify+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet" />
     <h1>Calculator</h1>
-        <div class="calculator-div">
-        <!--Operacion | Operation-->
-        <input type="text" id="contacto-div__input" placeholder="0" disabled>
-        <br>
+    <!--Calculadora | Calculator-->
+    <div class="calculator-div">
+        <!--Mostrar Operacion | Show Operation-->
+        <div class="calculator-div__div1">
+            <input type="text" id="contacto-div__div-input" disabled />
+        </div>
         <!--Botones | Buttons-->
-        <button type="button" class="contacto-div__button" onclick="agregar('Pi')">π</button>
-        <button type="button" class="contacto-div__button"  onclick="agregar('e')">e</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('(')">(</button>
-        <button type="button" class="contacto-div__button" onclick="agregar(')')">)</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('AC')">AC</button>
-        <br>
-        <button type="button" class="contacto-div__button" onclick="agregar('**')">^</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('7')">7</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('8')">8</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('9')">9</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('/')">/</button>
-        <br>
-        <button type="button" class="contacto-div__button" onclick="agregar('**0.5')">√</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('4')">4</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('5')">5</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('6')">6</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('*')">x</button>
-        <br>
-        <button type="button" class="contacto-div__button" onclick="agregar(',')">,</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('1')">1</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('2')">2</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('3')">3</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('-')">-</button>
-        <br>
-        <button type="button" class="contacto-div__button" onclick="agregar('%')">%</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('.')">.</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('0')">0</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('=')">=</button>
-        <button type="button" class="contacto-div__button" onclick="agregar('+')">+</button>
+        <div class="calculator-div__div2">
+            <!--Primer Fila | First Row-->
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('**')">
+                ^
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('(')">
+                (
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar(')')">
+                )
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('A')">
+                ⇠
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('C')">
+                AC
+            </button>
+            <br />
+            <!--Segunda Fila | Second Row-->
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('P')">
+                π
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('7')">
+                7
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('8')">
+                8
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('9')">
+                9
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('/')">
+                /
+            </button>
+            <br />
+            <!--Tercer Fila | Third Row-->
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('e')">
+                e
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('4')">
+                4
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('5')">
+                5
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('6')">
+                6
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('*')">
+                x
+            </button>
+            <br />
+            <!--Cuarta Fila | Fourth Row-->
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('R')">
+                √
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('1')">
+                1
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('2')">
+                2
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('3')">
+                3
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('-')">
+                -
+            </button>
+            <br />
+            <!--Quinta Fila | Fifth Row-->
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('%')">
+                %
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('.')">
+                .
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('0')">
+                0
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('=')">
+                =
+            </button>
+            <button type="button" class="contacto-div__dev-button" onclick="agregar('+')">
+                +
+            </button>
+        </div>
     </div>
     <!--Enlazar html con JS | Link html with JS-->
     <script src="calculator.js"></script>
 </body>
+
 </html>
