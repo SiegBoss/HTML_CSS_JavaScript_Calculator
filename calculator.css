@@ -1,76 +1,150 @@
 /*Estilo de la calculadora | Calculator Style*/
 
-/*Paleta de Color | Color Palette*/
-/*
-cad2c5
-84a98c
-52796f
-354f52
-2f3e46
-*/
-
+/*Cuerpo de la página | Body of the page*/
 body{
-    background-image: url("Wallpapers.jpg");
-    background-size: cover;
-    font-family: 'Geologica', sans-serif;
+    background-color: #3D405B;
+    font-family: monospace;
+    text-transform: uppercase;
 }
 
+/*Titulo de la página | Title of the page*/
 h1{
-    background-color: #354f52b3;
-    color: #cad2c5;
+    background-color: rgb(0, 0, 0,0.5);
+    color: #EDDDD4;
     height: 60px;
     font-size: 40px;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+/*Contenedor de la calculadora | Calculator container*/
 .calculator-div{
     width: 380px;
-    height: 400px;
-    background-color: rgba(53, 79, 82,0.7);
+    height: 440px;
+    background-color: rgb(0, 0, 0,0.5);
     border-radius: 20px;
     margin: auto;
     margin-top: 50px;
+    position: relative;
 }
 
+/*Contenedor del input | Input container*/
 .calculator-div__div1{
-    width: 307px;
-    height: 55px;
-    margin: auto;
+    position: absolute;
+    width: 310px;
+    height: 60px;
+    left: 35px;
+    top: 20px;
 }
-
 #contacto-div__div-input{
     width: 307px;
     height: 55px;
-    border: 2px solid #cad2c5;
+    border: 2px solid #EDDDD4;
     border-radius: 12.5px;
     font-size: 25px;
-    color: #cad2c5;
-    background-color: #52796f
+    color: #EDDDD4;
+    background-color: rgb(0, 0, 0,0.5);
 }
 
+/*Contenedor de los botones | Buttons container*/
 .calculator-div__div2{
-    width: 311px;
+    position: absolute;
+    width: 310px;
     height: 300px;
-    margin: auto;
-    margin-top: 20px;
+    left: 35px;
+    top: 90px;
 }
 
-.contacto-div__dev-button{
+/*Estilo de los botones que tienen simbolos | Style of the buttons that have symbols*/
+.contacto-div__dev-button-symbols{
     width: 55px;
     height: 55px;
-    background-color: #84a98c;
-    border-radius: 12.5px;
-    color: #2f3e46;
-    cursor: pointer;
+    text-transform: uppercase;
     font-size: 20px;
-    margin: 2px;
-    border: none;
+    color: #14213d;
+    border-radius: 10px;
+    border: 3px solid #14213d;
+    background: #f4a261;
+    box-shadow: 3px 3px #f4a261;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+.contacto-div__dev-button-symbols:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
 }
 
-.contacto-div__dev-button:active {
-    background-color: #52796f; 
+/*Estilo del boton de igual | Style of the equal button*/
+.contacto-div__dev-button-equal{
+    width: 55px;
+    height: 55px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #14213d;
+    border-radius: 10px;
+    border: 3px solid #14213d;
+    background: #2a9d8f;
+    box-shadow: 3px 3px #2a9d8f;
+    cursor: pointer;
 }
+.contacto-div__dev-button-equal:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+/*Estilo de los botones que tienen numeros | Style of the buttons that have numbers*/
+.contacto-div__dev-button-number{
+    width: 55px;
+    height: 55px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #14213d;
+    border-radius: 10px;
+    border: 3px solid #14213d;
+    background: #8d99ae;
+    box-shadow: 3px 3px #8d99ae;
+    cursor: pointer;
+}
+.contacto-div__dev-button-number:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+/*Estilo del boton de borrar | Style of the delete button*/
+.contacto-div__dev-button-delete{
+    width: 55px;
+    height: 55px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #14213d;
+    border-radius: 10px;
+    border: 3px solid #14213d;
+    background: #da2c38;
+    box-shadow: 3px 3px #da2c38;
+    cursor: pointer;
+}
+.contacto-div__dev-button-delete:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+/*Estilo del boton de borrar el ultimo numero | Style of the delete last number button*/
+.contacto-div__dev-button-delete2{
+    width: 55px;
+    height: 55px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #14213d;
+    border-radius: 10px;
+    border: 3px solid #14213d;
+    background: #118ab2;
+    box-shadow: 3px 3px #118ab2;
+    cursor: pointer;
+}
+.contacto-div__dev-button-delete2:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
