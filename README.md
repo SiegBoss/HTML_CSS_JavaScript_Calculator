@@ -5,6 +5,7 @@ Este proyecto es una Calculadora Web realizada con HTML, CSS y JavaScript.
 Puede realizar operaciones básicas como suma, resta, multiplicación y división. Además, tiene otras pequeñas funcionalidades.
 
 ## Herramientas de Desarrollo
+
 - HTML
 - CSS
 - JavaScript
@@ -24,6 +25,7 @@ This project is a Web Calculator made with HTML, CSS and JavaScript.
 It can perform basic operations such as addition, subtraction, multiplication and division. In addition, it has other small functionalities.
 
 ## Development tools
+
 - HTML
 - CSS
 - JavaScript
