@@ -12,7 +12,7 @@ Puede realizar operaciones básicas como suma, resta, multiplicación y divisió
 
 ## Demostración
 
-Puedes ver una demostración de la calculadora en funcionamiento en el siguiente enlace: 
+Puedes ver una demostración de la `Calculadora` en funcionamiento en el siguiente enlace: 
 
 https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
 
@@ -32,6 +32,6 @@ It can perform basic operations such as addition, subtraction, multiplication an
 
 ## Demo
 
-You can see a demonstration of the calculator in operation at the following link:
+You can see a demonstration of the `Calculator` in operation at the following link:
 
 https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
