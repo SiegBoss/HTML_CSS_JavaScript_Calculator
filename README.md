@@ -16,6 +16,10 @@ Puedes ver una demostración de la `Calculadora` en funcionamiento en el siguien
 
 https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
 
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
+
 ------------------------------
 
 # Basic calculator in HTML, CSS and JavaScript
@@ -35,3 +39,7 @@ It can perform basic operations such as addition, subtraction, multiplication an
 You can see a demonstration of the `Calculator` in operation at the following link:
 
 https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
+
+## License
+
+This project is under the MIT license. Check the `LICENSE` file for more details.
