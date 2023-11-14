@@ -62,5 +62,5 @@ function agregar(valor) {
     }
 
     //Muestra la operacion | Show the operation
-    document.getElementById('contacto-div__div-input').value = see_operation;
+    document.getElementById('calculator-input').value = see_operation;
 }
