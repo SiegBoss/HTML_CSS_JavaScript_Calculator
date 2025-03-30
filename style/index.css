@@ -1,163 +1,303 @@
-/* Estilos generales | General styles */
+/* 
+  Estilos para calculadora con soporte de modo claro/oscuro.
+  Incluye animaciones, botones personalizados, input, y footer.
+
+  Style for calculator with light/dark mode support.
+Includes animations, custom buttons, input, and footer.
+*/
+
+/* ------------------------- */
+/* FUENTE Y ESTILOS GENERALES | GENERAL STYLES */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #3D405B;
+    background: #e9eef3;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* Transiciones generales | General transitions */
+body,
+.calculator-main,
+.container-input input,
+.button,
+footer {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ------------------------- */
+/* TÍTULO PRINCIPAL | MAIN TITLE */
 h1 {
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0, 0.5);
-    color: #EDDDD4;
+    text-align: center;
+    margin: 40px 0 20px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #2c3e50;
 }
 
-
-/*---------------------------*/
-/* Contenedor principal | Main container */
+/* ------------------------- */
+/* CONTENEDOR DE LA CALCULADORA | CALCULATOR CONTAINER */
 .calculator-main {
     max-width: 400px;
-    margin: auto;
-    margin-top: 2%;
-    padding: 20px;
-    border-radius: 25px;
-    background-color: rgb(0, 0, 0, 0.5);
-    box-shadow: #1b2432 0px 0px 40px 0px
+    margin: 0 auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.container-input {
-    margin-bottom: 15px;
-}
-
-#calculator-input{
-    font-size: 20px;
+/* ------------------------- */
+/* PANTALLA DE ENTRADA | INPUT SCREEN */
+.container-input input {
     width: 100%;
-    padding: 10px;
-    border-radius: 15px;
-    border: 2px solid #EDDDD4;
-    background-color: rgb(0, 0, 0, 0.5);;
-    color: #EDDDD4;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 10px 15px;
+    text-align: right;
+    background: #ecf0f1;
+    color: #2c3e50;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
+/* ------------------------- */
+/* BOTONES | BUTTONS */
+/* Contenedor principal de botones | Main button container */
 .main-buttons {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.column{
+/* Fila de botones | Row of buttons */
+.column {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    gap: 10px;
 }
 
-.button{
-    font-size: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
+/* Estilo base de los botones | Base style of buttons */
+.button {
+    flex: 1;
+    padding: 18px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
     cursor: pointer;
-    background-color: #8d99ae;
-    color: #14213d;
-    border: 3px solid #EDDDD4;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones por tipo | Buttons by type */
+.button-number {
+    background-color: #e0e0e0;
+    color: #2c3e50;
+}
+
+.button-symbol {
+    background-color: #74b9ff;
+    color: white;
 }
 
 .button-equal {
-    background-color: #2a9d8f;
+    background-color: #00cec9;
+    color: white;
 }
 
-.button-symbol{
-    background-color: #f4a261;
+.button-delate1 {
+    background-color: #d63031;
+    color: white;
 }
 
-.button-delate1{
-    background-color: #da2c38;
+.button-delate2 {
+    background-color: #fdcb6e;
+    color: #2c3e50;
 }
 
-.button-delate2{
-    background-color: #118ab2;
+/* Efecto hover | Hover effect */
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto al presionar | Press effect */
+.button {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .button:active {
-    transform: translate(3px, 3px);
-    background-color: #81B29A;
-    color: #EDDDD4;
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
-/*---------------------------*/
-/*Pie de pagina | Footer*/
+/* ------------------------- */
+/* FOOTER */
 footer {
-    margin-top: 100px;
-    min-height: 500px;
-    margin-top: 200px;
-    background-color: #1b1b32;
-    color: #fff;
-}
-
-.footer_text_f {
-    font-size: 1.5rem;
-}
-
-.footer_text {
-    margin-top: 30px;
-    font-size: 1.2rem;
-    color: #FFFFFF;
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px 10px;
+    margin-top: 60px;
+    text-align: center;
 }
 
 .footer_icon {
-    height: 80px;
-    width: 80px;
-    margin: 10px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.footer_text_f {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.footer_text {
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 .social_media_icons a {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    margin: 10px;
-    border: 2px solid white;
-    border-radius: 50%;
-    transition: all 0.2s ease-in;
-}
-
-.social_media_icons i {
+    font-size: 1.6rem;
+    margin: 0 10px;
     color: white;
-    font-size: 1.5rem;
-    transition: all 0.2s ease-in;
+    transition: color 0.3s;
 }
 
 .social_media_icons a:hover {
-    background-color: white;
-    border: 2px solid rgb(13, 110, 253);
-}
-
-.social_media_icons a:hover i {
-    color: black;
+    color: #00cec9;
 }
 
 .Copyright {
-    font-size: 15px;
-    color: #aeaeae;
-    padding: 20px;
+    margin-top: 15px;
+    font-size: 0.9rem;
 }
 
-.contact button:hover i {
-    color: black;
+/* ------------------------- */
+/* MODO OSCURO | DARK MODE */
+body.dark-mode {
+    background: #1e272e;
+    color: #f1f2f6;
 }
 
+.dark-mode h1 {
+    color: #f1f2f6;
+}
 
-/*---------------------------*/
-/* Responsive */
-@media screen and (max-width: 420px) {
-    h1{
-        font-size: 35px;
+.dark-mode .calculator-main {
+    background: #2f3640;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .container-input input {
+    background: #353b48;
+    color: #f5f6fa;
+}
+
+.dark-mode .button-number {
+    background-color: #57606f;
+    color: #f1f2f6;
+}
+
+.dark-mode .button-symbol {
+    background-color: #487eb0;
+    color: white;
+}
+
+.dark-mode .button-equal {
+    background-color: #00a8ff;
+}
+
+.dark-mode .button-delate1 {
+    background-color: #e84118;
+}
+
+.dark-mode .button-delate2 {
+    background-color: #fbc531;
+    color: #2f3640;
+}
+
+.dark-mode .footer_text_f,
+.dark-mode .footer_text,
+.dark-mode .Copyright {
+    color: #f1f2f6;
+}
+
+.dark-mode footer {
+    background-color: #2f3640;
+}
+
+.dark-mode .social_media_icons a {
+    color: #f1f2f6;
+}
+
+.dark-mode .social_media_icons a:hover {
+    color: #00a8ff;
+}
+
+/* ------------------------- */
+/* RESPONSIVE: MÓVILES | MOBILE */
+@media (max-width: 480px) {
+    .calculator-main {
+        padding: 15px;
+    }
+
+    .container-input input {
+        font-size: 1.5rem;
+        padding: 8px 10px;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
+
+/* ------------------------- */
+/* RESPONSIVE: TABLETAS | TABLETS */
+@media (min-width: 481px) and (max-width: 768px) {
+    .calculator-main {
+        padding: 20px;
+    }
+
+    .container-input input {
+        font-size: 1.8rem;
+        padding: 10px 12px;
+    }
+
+    .button {
+        font-size: 1.1rem;
+        padding: 16px 0;
+    }
+
+    footer {
+        padding: 25px 10px;
+    }
+}
+
+/* ------------------------- */
+/* RESPONSIVE: PANTALLAS GRANDES | LARGE SCREENS */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .calculator-main {
+        padding: 30px;
+    }
+
+    .container-input input {
+        font-size: 2rem;
+        padding: 12px 15px;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        padding: 18px 0;
+    }
+
+    footer {
+        padding: 30px 10px;
     }
 }

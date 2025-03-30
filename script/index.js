@@ -1,6 +1,9 @@
 //Calculadora con JavaScript | Calculator with JavaScript
 
-//Variables
+// Cambiar entre modo Claro y Oscuro | Switch between Light and Dark mode
+const toggleBtn = document.getElementById("toggle-theme");
+
+//Variables 
 var seeOperation = "";
 var hiddenOperation = "";
 
@@ -79,3 +82,19 @@ function add(data) {
     //Muestra la operacion | Show the operation
     document.getElementById('calculator-input').value = seeOperation;
 }
+
+// Cambiar entre modo Claro y Oscuro | Switch between Light and Dark mode
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Cambiar texto e ícono del botón
+    if (document.body.classList.contains("dark-mode")) {
+        toggleBtn.innerHTML = "☀️ Modo Claro";
+        toggleBtn.classList.remove("btn-outline-dark");
+        toggleBtn.classList.add("btn-outline-light");
+    } else {
+        toggleBtn.innerHTML = "🌑 Modo Oscuro";
+        toggleBtn.classList.remove("btn-outline-light");
+        toggleBtn.classList.add("btn-outline-dark");
+    }
+});
