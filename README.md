@@ -20,7 +20,7 @@ Permite realizar operaciones aritméticas básicas como **suma**, **resta**, **m
 
 ## 🔍 Demostración
 
-Puedes ver una demostración del proyecto en el siguiente enlace:  https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
+Puedes ver una demostración del proyecto en el siguiente enlace: https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
 
 ## 📄 Licencia
 
