@@ -1,45 +1,57 @@
-# Calculadora básica en HTML, CSS y JavaScript
+# 🧮 Calculadora Básica en HTML, CSS y JavaScript
 
-Este proyecto es una Calculadora Web realizada con HTML, CSS y JavaScript. 
+Este proyecto es una **calculadora web** desarrollada con **HTML**, **CSS** y **JavaScript**.  
+Permite realizar operaciones aritméticas básicas como **suma**, **resta**, **multiplicación** y **división**, además de otras funcionalidades simples.
 
-Puede realizar operaciones básicas como suma, resta, multiplicación y división. Además, tiene otras pequeñas funcionalidades.
+## ✨ Funcionalidades
 
-## Herramientas de Desarrollo
+- Suma
+- Resta
+- Multiplicación
+- División
+- Botón de limpiar
+- Interfaz responsiva y amigable
 
-- HTML
-- CSS
+## 🛠️ Tecnologías Utilizadas
+
+- HTML  
+- CSS  
 - JavaScript
 
-## Demostración
+## 🔍 Demostración
 
-Puedes ver una demostración de la `Calculadora` en funcionamiento en el siguiente enlace: 
+Puedes ver una demostración del proyecto en el siguiente enlace:  https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
 
-https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
+## 📄 Licencia
 
-## Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo [`LICENSE`] para más información.
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
+---
 
-------------------------------
+# 🧮 Basic Calculator in HTML, CSS and JavaScript
 
-# Basic calculator in HTML, CSS and JavaScript
+This project is a **web calculator** built using **HTML**, **CSS**, and **JavaScript**.  
+It allows users to perform basic arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division**, along with a few extra features.
 
-This project is a Web Calculator made with HTML, CSS and JavaScript.
+## ✨ Features
 
-It can perform basic operations such as addition, subtraction, multiplication and division. In addition, it has other small functionalities.
+- Addition  
+- Subtraction  
+- Multiplication  
+- Division  
+- Clear button  
+- Responsive and user-friendly interface
 
-## Development tools
+## 🛠️ Development Tools
 
-- HTML
-- CSS
+- HTML  
+- CSS  
 - JavaScript
 
-## Demo
+## 🔍 Demo
 
-You can see a demonstration of the `Calculator` in operation at the following link:
+Check out a live demo of the project here: https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
 
-https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/
+## 📄 License
 
-## License
-
-This project is under the MIT license. Check the `LICENSE` file for more details.
+This project is licensed under the MIT License. See the [`LICENSE`] file for more details.
